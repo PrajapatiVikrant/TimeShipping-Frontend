@@ -1,0 +1,24 @@
+th{
+    font-size: 25px;
+    padding: 8px;
+    border: 2px solid black;
+}
+td{
+    font-size: 25px;
+    padding: 8px;
+    border: 2px solid black;
+}
+table{
+    border: 2px solid black;
+}
+.Editbtn{
+    width: 300px;
+    border:  none;
+    background-color: blue;
+    font-size: 25px;
+    padding: 8px;
+    color: white;
+    border-radius: 45px;
+    margin-top: 20px;
+    cursor: pointer;
+}

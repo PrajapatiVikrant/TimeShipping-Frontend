@@ -1,0 +1,16 @@
+input{
+    padding: 5px;
+    font-size: 20px;
+    width: 300px;
+    margin: 8px;
+}
+.LoginBtn{
+    padding: 6px 16px;
+    border: none;
+    background-color: blue;
+    color: white;
+    font-size: 25px;
+    margin-top: 20px;
+    margin-right: 200px;
+    cursor: pointer;
+}
