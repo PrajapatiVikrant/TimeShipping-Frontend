@@ -13,7 +13,8 @@ function EditingRate(props) {
       if(data.data === 'Rate has edited'){
         console.log('I am working in right')
         alert(data.data)
-        navigate('/ManagerSideDisplay')
+       props.EditDisplay.display = "none"
+       props.setdisplay('');
       }else{
         alert(data.data)
       }

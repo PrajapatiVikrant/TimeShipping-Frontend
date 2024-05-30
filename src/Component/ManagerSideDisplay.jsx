@@ -17,10 +17,10 @@ function ManagerSideDisplay(){
            setEmployeeData(data.data.display)
         }
         function EditForm(Name,Email,datee,TimeRange,Project,Rated){
-            document.getElementById('EmployeesDetail').style.display = "none";
+          let EditDisplay =  document.getElementById('EmployeesDetail').style.display = "none";
                setdisplay(()=>{
-                return <EditingRate name={Name} email={Email} date={datee} timeRange={TimeRange} projectName={Project} taskDescription="crud operation" rated={Rated}/>
-               })
+                return <EditingRate name={Name} email={Email} date={datee} timeRange={TimeRange} projectName={Project} taskDescription="crud operation" rated={Rated} EditDisplay = {EditDisplay} setdisplay = {setdisplay}/>
+   f            })
         }
         async function DeletedRecord(Name,Email,datee,TimeRange,Project,Rated){
             const data = await axios.delete(`https://time-shipping-backend.vercel.app/TimeSheet/deleteReport?ManagerEmail=${localStorage.getItem('managerEmail')}&email=${Email}&projectName=${Project}&timeRange=${TimeRange}&name=${Name}&taskDiscription=${['crud application']}&date=${datee}&rated=${Rated}&token=${localStorage.getItem('token')}`)
