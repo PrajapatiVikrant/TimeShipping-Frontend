@@ -16,10 +16,14 @@ function ManagerSideDisplay(){
           
            setEmployeeData(data.data.display)
         }
+        function EditDisplay(){
+            document.getElementById('EmployeesDetail').style.display = "block";
+            setdisplay('')
+        }
         function EditForm(Name,Email,datee,TimeRange,Project,Rated){
-          let EditDisplay =  document.getElementById('EmployeesDetail').style.display = "none";
+            document.getElementById('EmployeesDetail').style.display = "none";
                setdisplay(()=>{
-                return <EditingRate name={Name} email={Email} date={datee} timeRange={TimeRange} projectName={Project} taskDescription="crud operation" rated={Rated} EditDisplay = {EditDisplay} setdisplay = {setdisplay}/>
+                return <EditingRate name={Name} email={Email} date={datee} timeRange={TimeRange} projectName={Project} taskDescription="crud operation" rated={Rated} EditDisplay = {EditDisplay} />
    f            })
         }
         async function DeletedRecord(Name,Email,datee,TimeRange,Project,Rated){
