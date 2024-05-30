@@ -13,7 +13,7 @@ function EditingRate(props) {
       if(data.data === 'Rate has edited'){
         console.log('I am working in right')
         alert(data.data)
-        window.location.reload();
+        navigate('/ManagerSideDisplay')
       }else{
         alert(data.data)
       }
