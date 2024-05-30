@@ -13,7 +13,7 @@ function EditingRate(props) {
       if(data.data === 'Rate has edited'){
         console.log('I am working in right')
         alert(data.data)
-       props.EditDisplay.display = "none"
+       props.EditDisplay.display = "block"
        props.setdisplay('');
       }else{
         alert(data.data)
